@@ -3,7 +3,7 @@ import "./Item.css";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 
-export const Item = ({ Name, img, Stock, Price, Category }) => {
+export const Item = ({ Name, img, Stock, Price, Category,Description }) => {
   
   const [modalShow, setModalShow] = useState(false);
   return (
@@ -16,7 +16,10 @@ export const Item = ({ Name, img, Stock, Price, Category }) => {
       <Button variant="primary" onClick={() => setModalShow(true)}>Ver Mas</Button>
       {modalShow && (
         <MyVerticallyCenteredModal
-        
+          Name={Name}
+          img={img}
+          Description={Description}
+          Price={Price}
           show={modalShow}
           onHide={() => setModalShow(false)}
         />

@@ -20,10 +20,13 @@ export function MyVerticallyCenteredModal(props)  {
         <h4> {Name}  </h4>
       </Modal.Title>
       </Modal.Header>
-        <div>{img}</div>
       <Modal.Body>
-        {Price}
-        <p> {Description} </p>
+        <div className='product-content' style={{display:"flex"}}>
+        <img src={img} alt="Producto" />
+        <p>Descripcion: {Description} </p>
+        </div>
+        <p>Precio: ${Price} </p>
+       
       </Modal.Body>
       <Modal.Footer>
         <ItemCount />
