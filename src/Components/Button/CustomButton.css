@@ -1,0 +1,104 @@
+body {
+    background: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #c2c2c2;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 20px;
+    
+  }
+  
+  
+  .btn-2 {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  /* Created by http://grohit.com/  */
+  footer a,
+  
+  .btn-2 a {
+    text-decoration: none;
+    border: 2px solid #010100;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  span {
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+  }
+  
+  
+  
+  
+  .btn-2 a:hover::before {
+    transform: scaleY(1);
+    background-color: white;
+  }
+  
+  
+  
+  
+  .btn-2 a:hover::after {
+    transform: scaleX(1);
+    background-color:  white;
+  }
+  
+  /* Button 2 styles */
+  
+  .btn-2 a {
+    color: white !important;
+    transition: all 0.5s ease-out;
+    font-size: small;
+  }
+  
+  .btn-2 a:hover {
+    color: black !important;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-2 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white !important;
+    transition: all 0.5s ease-out;
+    transform: scaleY(0);
+  }
+  
+  .btn-2 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white !important;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(0);
+  }
+  
+  /* Created by http://grohit.com/  */
+  footer{
+      text-align: center;
+    font-size: 10px;
+  }

@@ -1,0 +1,23 @@
+.ContainerFilter{
+    display: flex;
+    justify-content: center;
+}
+
+.containerNav--ul--li{
+    margin-inline: 20px ;
+    justify-content: space-between;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.ProductsFilter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+

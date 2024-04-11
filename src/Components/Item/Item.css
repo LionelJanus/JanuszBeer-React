@@ -1,0 +1,41 @@
+.card {
+    display: grid !important;
+    justify-items: center;
+    height: auto;
+    background: gray;
+    border-radius: 10px;
+    border: blue 1px solid;
+    margin: 10px 10px;
+    align-content: stretch;
+    justify-content: space-evenly;
+    }
+    
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+
+p{
+    margin-left: 10px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+
+.btn-info{
+    color: blue !important;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    text-decoration: underline !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.card--img{
+    width: 150px;
+    height: 160px;
+}
+

@@ -1,0 +1,43 @@
+img{
+    height: auto;
+    width: 150px;
+}
+
+header{
+    background-image:  url(https://i.ibb.co/0BzdtZq/home-header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.containerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.containerNav{
+    display: contents;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: #008000 !important;
+    text-decoration: none !important;
+    font-size: 20px;
+}
+
+.ContainerWidget{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.slide-primary{
+    width: 500px;
+    height: 500px;
+
+}
