@@ -11,6 +11,7 @@ import UserProfile from './Components/Profile/UserProfile';
 import { AuthProvider } from './Components/Context/AuthContext';
 import AvatarMenu from './Components/AvatarMenu/Avatar';
 import Register from './Components/UserRegister/Register';
+import   Footer    from './Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -29,14 +30,15 @@ function App() {
           <Route path="Products" element={<ItemListContainer />} />
           <Route path="Category/:idCategory" element={<ItemListContainer />} />
           <Route path="item/:idItem" element={<ItemDetailContainer />}/>
-						<Route path="/Cart" element={<Cart />} />
-						<Route path="/Checkout" element={<Checkout/>} />
-            <Route path="/" element={<LoginModal />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/profile" element={<UserProfile />} />
-          {/* <Route path="Nosotros" element={<Nosotros/>}/> 
-          <Route path="Contacto" element={<Contacto/>}/>  */}
+					<Route path="/Cart" element={<Cart />} />
+					<Route path="/Checkout" element={<Checkout/>} />
+          <Route path="/" element={<LoginModal />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/profile" element={<UserProfile />} />
+          {/* <Route path="Nosotros" element={<Nosotros/>}/> */}
+          
         </Routes>
+        <Footer/>
       </BrowserRouter>
       </CartProvider>
       </AuthProvider>
