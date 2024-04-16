@@ -41,3 +41,17 @@ a{
     height: 500px;
 
 }
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: flex-end;
+    padding: 0px;
+    margin-bottom: 48px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los ítems */
+    gap: 10px; /* Espacio entre los ítems */
+}

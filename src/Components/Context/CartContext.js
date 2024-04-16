@@ -6,12 +6,13 @@ export const CartProvider = ({ children }) => {
 	const [cart, setCart] = useState([]);
 	const [cartQuantity, setCartQuantity] = useState(0);
 	const [totalCartValue, setTotalCartValue] = useState(0);
-
+	
 	const addProduct = (prod, count) => {
+		 
 		
 		//PRIMERO TIENE QUE CORROBOAR QUE NO EXISTA EN EL CARRITO
 		const isInCart = cart.find((itemInCart) => itemInCart.id === prod.id);
-		console.log(isInCart);
+		
 		
 
 		if (isInCart) {
@@ -26,6 +27,7 @@ export const CartProvider = ({ children }) => {
 		}
 		console.log({isInCart});
 	};
+	
 
 	const removeProduct = (idToDelete) => {
 		// BUSCAR EL PRODUCTO (UNO SOLO) EN EL CARRITO y eliminarlo
@@ -36,7 +38,7 @@ export const CartProvider = ({ children }) => {
 		setTotalCartValue(
 			cart
 				.reduce(
-					(totalP, prod) => totalP + prod.price * prod.quantity,
+					(totalP, prod) => totalP + prod.Price * prod.quantity,
 					0
 				)
 				.toFixed(2)

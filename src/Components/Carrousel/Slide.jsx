@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Slide.css"
 
 
 function IndividualIntervalsExample() {

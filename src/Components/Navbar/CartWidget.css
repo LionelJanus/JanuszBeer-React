@@ -1,0 +1,15 @@
+/* CartWidget.css */
+.cart-widget-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Para remover el subrayado de los enlaces */
+    color: inherit; /* Para heredar el color del texto */
+  }
+  
+  .cart-widget {
+    display: flex;
+    align-items: center;
+    /* Ajusta el margen si es necesario */
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,18 @@
+.w-100 {
+    width: 80% !important;
+    margin-top: 80px !important;
+}
+
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    margin-left: 100px !important;
+
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    margin-left: 100px;
+}

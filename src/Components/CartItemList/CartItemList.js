@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
-
 import { CartItem } from "../CartItem/CartItem";
 import { CheckoutForm } from "../CheckoutForm/CheckoutForm";
 
@@ -8,6 +7,7 @@ import { CheckoutForm } from "../CheckoutForm/CheckoutForm";
 export const CartItemList = () => {
 	const { cart, totalCartValue, emptyCart } = useContext(CartContext);
 	console.log({cart});
+	
 	return (
 		<div className="ItemOnCartContainerList">
 			{cart.map((product) => (
@@ -19,7 +19,7 @@ export const CartItemList = () => {
 						img={product.img}
 						Name={product.Name}
 						quantity={product.quantity}
-						Price={product.rice}
+						Price={product.Price}
 					/>
 				</div>
 				
