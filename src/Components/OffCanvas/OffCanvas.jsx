@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { CartContext } from "../Context/CartContext";
 import { CartItemList } from "../CartItemList/CartItemList";
 import { Link } from "react-router-dom";
-import { Cart } from "../Cart/Cart";
+import { CartItem } from "../CartItem/CartItem";
 
 
 
@@ -46,7 +46,7 @@ function CanvasCart() {
         </Offcanvas.Header>
         <Offcanvas.Body>
         {cartQuantity > 0 ? (
-            <CartItemList  />
+            <CartItemList />
           ) : (
             <div>
               <p>Carrito Vacio 🤔</p>

@@ -13,9 +13,10 @@ export const Item = ({ Name, img, Stock, Price, Category,Description }) => {
     <div className="card">
       <h3> {Name} </h3>
       <img className="card--img" src={img} />
-      <p> Precio: $ {Price}</p>
       <p> Stock: {Stock} </p>
       <p> Origen: {Category} </p>
+      <p> Precio: $ {Price}</p>
+     
       <Button variant="primary" className="btn-info" onClick={() => setModalShow(true)}>Mas Informacion</Button>
       <div className="addCard">
       <ItemCount/>

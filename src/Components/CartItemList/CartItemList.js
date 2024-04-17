@@ -4,7 +4,7 @@ import { CartItem } from "../CartItem/CartItem";
 import { CheckoutForm } from "../CheckoutForm/CheckoutForm";
 
 
-export const CartItemList = () => {
+export  const CartItemList = () => {
 	const { cart, totalCartValue, emptyCart } = useContext(CartContext);
 	console.log({cart});
 	
@@ -34,3 +34,4 @@ export const CartItemList = () => {
 		</div>
 	);
 };
+

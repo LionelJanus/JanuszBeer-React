@@ -24,8 +24,8 @@ ul{
     list-style-type: none;
 }
 
-a{
-    color: #008000 !important;
+ ul a{
+    color: #008000 ;
     text-decoration: none !important;
     font-size: 20px;
 }

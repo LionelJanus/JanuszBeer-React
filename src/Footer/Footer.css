@@ -1,5 +1,5 @@
 .Content-primary{
-    background-color: #31363F;
+    background-color:#131212;
     
 }
 
@@ -52,4 +52,17 @@
     justify-content: space-around;
   }
   
-  
+  .instagram-icon{
+    background-color: #131212;
+    border:#131212;
+  }
+
+  .twiter-icon{
+    background-color: #131212;
+    border:#131212;
+  }
+
+  .facebook-icon{
+    background-color: #131212;
+    border:#131212;
+  }

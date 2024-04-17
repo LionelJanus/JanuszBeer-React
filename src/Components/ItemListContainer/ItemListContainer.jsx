@@ -3,7 +3,7 @@ import { FilterProducts } from "../Filter/FilterProducts";
 import { ItemList } from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { data } from "../../DataProducts/data";
-import "./ItemListContainer.css";
+
 import { Loader } from "../Loader/Loader";
 import { getProducts, getProductsByCategory } from "../../Services/firebase";
 

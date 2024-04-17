@@ -39,6 +39,7 @@ function Footer() {
         </div>
         <div className="footer-section info-section">
           <img src="https://i.postimg.cc/pdySgz8q/JANUSZ-LOGO.png" alt="Logotipo de la Empresa" className="footer-logo" />
+          <p className='direccion'>Direccion: Av Siempre Viva 742</p>
           <p className="contact-number">Número de contacto: +1 (123) 456-7890</p>
           <div className="social-media-icons">
             <a className='facebook-icon' href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">

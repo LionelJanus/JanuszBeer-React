@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+
+
+  .Filter{
+    margin: 0;
+    padding: 0;
+    /* Define un gradiente lineal que va desde verde oscuro a verde claro */
+    background: linear-gradient(135deg, #283739 30%, #0b3d1e 60%, #c2a05f 100%);
+    /* Asegúrate de que el fondo cubra toda la página */
+    min-height: 100vh;
+    background-attachment: fixed; 
+  }
+
+  

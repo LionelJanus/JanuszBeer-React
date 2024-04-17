@@ -8,16 +8,22 @@
     justify-content: space-between;
     display: inline-flex;
     flex-wrap: wrap;
-
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
+
+
+
 
 .ProductsFilter{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 h1{
     display: flex;
     justify-content: center;
+    color: white;
 }
 

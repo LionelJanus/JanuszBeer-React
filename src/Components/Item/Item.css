@@ -2,31 +2,48 @@
     display: grid !important;
     justify-items: center;
     height: auto;
-    background: gray;
     border-radius: 10px;
-    border: blue 1px solid;
     margin: 10px 10px;
     align-content: stretch;
     justify-content: space-evenly;
-    }
-    
-
-h3{
-    display: flex;
-    justify-content: center;
+    border: 3px solid goldenrod;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    filter: blur(2px);
+    -webkit-filter: blur(0.5px);
+    background-image: url(https://i.postimg.cc/y8JgXryK/Adobe-Stock-195834535-Preview.jpg);
+   
 }
 
 
-p{
+.card:hover {
+    transform: scale(1.05);
+    /* Ligeramente más grande en hover */
+    box-shadow: 0 8px 16px 0 #0d0e0d;
+    /* Sombra más pronunciada en hover */
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    color: black ;
+    font-weight: 700;
+}
+
+
+p {
     margin-left: 10px;
     font-size: 15px;
     margin-bottom: 0px;
     margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
 
-.btn-info{
-    color: blue !important;
+.btn-info {
+    color:royalblue !important;
     padding-bottom: 0px;
     margin-bottom: 10px;
     text-decoration: underline !important;
@@ -34,8 +51,9 @@ p{
     border: none !important;
 }
 
-.card--img{
+.card--img {
     width: 150px;
     height: 160px;
+    border-radius : 10px;
+    opacity: 80%;
 }
-
