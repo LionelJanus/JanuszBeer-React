@@ -29,7 +29,7 @@ function CanvasCart() {
           width: "30px",
           backgroundColor: "transparent",
           border: "none",
-          fontSize: "25px",
+          fontSize: "30px",
         }}
       >
         🛒

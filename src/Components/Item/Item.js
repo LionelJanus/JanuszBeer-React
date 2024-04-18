@@ -3,7 +3,6 @@ import "./Item.css";
 import React, { useState } from "react";
 import { useCount } from "../Hooks/useCount";
 import { Button } from "react-bootstrap";
-
 import { ItemCount } from "../ItemCount/ItemCount";
 
 export const Item = ({ Name, img, Stock, Price, Category,Description }) => {

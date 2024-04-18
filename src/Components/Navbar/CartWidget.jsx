@@ -11,7 +11,11 @@ export const CartWidget = () => {
 	return (
 		<Link to={"/cart"} className="cart-widget-link" >
 			<div className="cart-widget" >
-				{cartQuantity} <CanvasCart/></div>
+				<div className="count">
+				{cartQuantity} 
+				</div>
+				
+				<CanvasCart/></div>
 		</Link>
 
 	)

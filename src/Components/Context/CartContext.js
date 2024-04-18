@@ -8,7 +8,8 @@ export const CartProvider = ({ children }) => {
 	const [totalCartValue, setTotalCartValue] = useState(0);
 	
 	const addProduct = (prod, count) => {
-		 
+		console.log(prod); 
+		console.log(count);
 		
 		//PRIMERO TIENE QUE CORROBOAR QUE NO EXISTA EN EL CARRITO
 		const isInCart = cart.find((itemInCart) => itemInCart.id === prod.id);
