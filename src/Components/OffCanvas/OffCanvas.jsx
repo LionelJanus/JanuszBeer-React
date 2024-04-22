@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { CartContext } from "../Context/CartContext";
 import { CartItemList } from "../CartItemList/CartItemList";
 import { Link } from "react-router-dom";
-import { CartItem } from "../CartItem/CartItem";
+
 
 
 

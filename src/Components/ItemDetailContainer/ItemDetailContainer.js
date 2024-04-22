@@ -10,11 +10,6 @@ export const ItemDetailContainer = () => {
 	const [loading, setLoading] = useState(true);
 
 	const [myProduct, setMyProduct] = useState({});
-	const myPromise = new Promise((resolve) => {
-		setTimeout(() => {
-			resolve(data);
-		}, 1500);
-	});
 	useEffect(() => {
 		// CUANDO COMPAREN EL ID DE LA URL Y EL DE SUSPRODUCTOS CONTROLAR QUE AMBOS SEAN DEL MISMO TIPO (STRING O NUMBER)
 		// EL VALOR idItem QUE VIENE DE LA URL ES DE TIPO STRING PESE A SER UN NUMERO

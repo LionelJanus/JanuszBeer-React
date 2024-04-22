@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import { CartItem } from "../CartItem/CartItem";
-import { CheckoutForm } from "../CheckoutForm/CheckoutForm";
-import { Link, useNavigate } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
 
 export  const CartItemList = () => {
 	const { cart, totalCartValue, emptyCart } = useContext(CartContext);

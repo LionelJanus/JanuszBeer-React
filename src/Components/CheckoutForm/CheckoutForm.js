@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
 import { CartContext } from "../Context/CartContext";
 import { createBuyOrder } from "../../Services/firebase";
 import { Loader } from "../Loader/Loader";

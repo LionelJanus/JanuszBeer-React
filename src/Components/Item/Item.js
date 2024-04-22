@@ -1,7 +1,7 @@
 import { MyVerticallyCenteredModal } from "../Modal/Modal";
 import "./Item.css";
 import React, { useState } from "react";
-import { useCount } from "../Hooks/useCount";
+
 import { Button } from "react-bootstrap";
 import { ItemCount } from "../ItemCount/ItemCount";
 
