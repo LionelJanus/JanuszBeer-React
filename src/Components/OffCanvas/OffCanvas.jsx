@@ -44,7 +44,7 @@ function CanvasCart() {
         <Offcanvas.Header closeButton>
           <Offcanvas.Title> Tu Carrito de Compras </Offcanvas.Title>  
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body >
         {cartQuantity > 0 ? (
             <CartItemList />
           ) : (

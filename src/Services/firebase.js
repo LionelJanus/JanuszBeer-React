@@ -64,6 +64,6 @@ export const createBuyOrder = async (order) => {
     const ordersCollectionRef = collection(db, "orders");
     const orderDoc = await addDoc(ordersCollectionRef , order);
     return orderDoc.id;
+}
 
-    }
 

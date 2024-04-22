@@ -18,7 +18,7 @@ export const Item = ({ Name, img, Stock, Price, Category,Description }) => {
      
       <Button variant="primary" className="btn-info" onClick={() => setModalShow(true)}>Mas Informacion</Button>
       <div className="addCard">
-      <ItemCount/>
+      <ItemCount product={{Name, img, Stock, Price, Category,Description}}/>
       </div>
       
       {modalShow && (

@@ -2,11 +2,13 @@ import { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import { CartItem } from "../CartItem/CartItem";
 import { CheckoutForm } from "../CheckoutForm/CheckoutForm";
-
+import { Link, useNavigate } from "react-router-dom";
 
 export  const CartItemList = () => {
 	const { cart, totalCartValue, emptyCart } = useContext(CartContext);
 	console.log({cart});
+
+	const navigate = useNavigate()
 	
 	return (
 		<div className="ItemOnCartContainerList">
@@ -29,7 +31,9 @@ export  const CartItemList = () => {
 				Vaciar Carrito
 			</button>
 			
-			<button className="checkout" onClick={CheckoutForm}> Terminar Compra </button> 
+			<button className="checkout" onClick={() => navigate('/Checkout')}>Terminar Compra</button>
+			{/* <Link className="checkout" to="/Checkout"> Terminar Compra </Link>  */}
+			
 			
 		</div>
 	);

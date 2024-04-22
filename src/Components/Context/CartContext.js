@@ -29,6 +29,9 @@ export const CartProvider = ({ children }) => {
 		console.log({isInCart});
 	};
 	
+	useEffect(()=> {
+		console.log("cart: ", cart)
+	}, [cart])
 
 	const removeProduct = (idToDelete) => {
 		// BUSCAR EL PRODUCTO (UNO SOLO) EN EL CARRITO y eliminarlo

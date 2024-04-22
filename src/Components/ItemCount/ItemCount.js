@@ -3,7 +3,7 @@ import { CustomButton } from "../Button/CustomButton";
 import "./ItemCount.css"
 
 
-export const ItemCount = () => {
+export const ItemCount = ({ product }) => {
   const { count, decrement, increment, addToCart } = useCount()
   return (
     <div>
@@ -13,7 +13,7 @@ export const ItemCount = () => {
             <button className='mas' onClick={increment} style={{width:"30px", backgroundColor:"black", color:"white"}}>+</button>
             </div>
         <div className='AddCart'>
-            <CustomButton onClick={addToCart} />
+            <CustomButton onClick={addToCart} product={product} />
 
             {/* <button onClick={addToCart}>Agregar al Carrito</button> */}
         

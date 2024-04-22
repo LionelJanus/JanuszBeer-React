@@ -9,14 +9,14 @@ export const CartWidget = () => {
 	const { cartQuantity } = useContext(CartContext)
 
 	return (
-		<Link to={"/cart"} className="cart-widget-link" >
+		<div className="cart-widget-link" >
 			<div className="cart-widget" >
 				<div className="count">
 				{cartQuantity} 
 				</div>
 				
 				<CanvasCart/></div>
-		</Link>
+		</div>
 
 	)
 
