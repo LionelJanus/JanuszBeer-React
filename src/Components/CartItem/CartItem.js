@@ -7,7 +7,7 @@ export const CartItem = ({ id, img, Name, quantity, Price }) => {
   return (
     <>
       <div className="ItemOnCartContainerProductDelete">
-        <div style={{display: "flex",flexDirection:"row-reverse"}}
+        <div
           className="ItemOnCartContainerProductDeleteIcon "onClick={() => removeProduct(id)}>
           ❌
         </div>
@@ -21,12 +21,12 @@ export const CartItem = ({ id, img, Name, quantity, Price }) => {
       </div>
       <div className="ItemOnCartContainerProductInfo">
         <p>{Name}</p>
-        <p className="ItemOnCartContainerProductPrecio">Price : $ {Price}</p>
+        <p className="ItemOnCartContainerProductPrecio">Precio : $ {Price}</p>
         <p className="ItemOnCartContainerProductCantidad">
-          Quantity : {quantity}
+          Cantidad : {quantity}
         </p>
         <p className="ItemOnCartContainerProductPrecio">
-          Total Product : $ {(Price * quantity).toFixed(2)}
+          Sub Total  : $ {(Price*quantity).toFixed(2)}
         </p>
       </div>
     </>

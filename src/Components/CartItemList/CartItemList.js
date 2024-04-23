@@ -11,10 +11,10 @@ export  const CartItemList = () => {
 	const navigate = useNavigate()
 	
 	return (
-		<div className="ItemOnCartContainerList">
+		<div className="ItemOnCartContainerList" >
 			{cart.map((product) => (
-				<div
-					key={product.id + "onCart"}>
+				<div style={{display:"flex"}}
+					key={product.Name + "onCart"}>
 					
 					<CartItem
 						id={product.id}
@@ -26,7 +26,7 @@ export  const CartItemList = () => {
 				</div>
 				
 			))}
-			<div className="TotalCartPrice">Total Cart : ${totalCartValue}</div>
+			<div className="TotalCartPrice">Total Carrito : ${totalCartValue}</div>
 			<button className="EmptyCartButton" onClick={emptyCart}>
 				Vaciar Carrito
 			</button>

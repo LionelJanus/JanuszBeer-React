@@ -12,11 +12,12 @@ export const CartProvider = ({ children }) => {
 		console.log(count);
 		
 		//PRIMERO TIENE QUE CORROBOAR QUE NO EXISTA EN EL CARRITO
-		const isInCart = cart.find((itemInCart) => itemInCart.id === prod.id);
+		const isInCart = cart.find((itemInCart) => itemInCart.Name === prod.Name);
 		
 		
 
 		if (isInCart) {
+			console.log('ESTA EN CARRO<')
 			// SI EXISTE , TIENE QUE SUMAR CANTIDADES
 			isInCart.quantity = isInCart.quantity + count;
 			setCart([...cart]);
@@ -29,6 +30,7 @@ export const CartProvider = ({ children }) => {
 		console.log({isInCart});
 	};
 	
+
 	useEffect(()=> {
 		console.log("cart: ", cart)
 	}, [cart])
