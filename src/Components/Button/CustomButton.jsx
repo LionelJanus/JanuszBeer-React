@@ -11,7 +11,7 @@ export const CustomButton = ({onClick , product}) => {
 
   return (
     <div className="btn-2">
-    <a href="#" onClick={handleClick}><span>Agregar al Carrito</span></a>
+    <button onClick={handleClick}><span>Agregar al Carrito</span></button>
   </div>
   )
 };

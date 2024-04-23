@@ -11,7 +11,7 @@ export const Item = ({ Name, img, Stock, Price, Category,Description }) => {
   return (
     <div className="card">
       <h3> {Name} </h3>
-      <img className="card--img" src={img} />
+      <img className="card--img" src={img}  alt="Imagen-producto"/>
       <p> Stock: {Stock} </p>
       <p> Origen: {Category} </p>
       <p> Precio: $ {Price}</p>
